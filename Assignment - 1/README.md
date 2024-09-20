@@ -48,7 +48,6 @@ Elastic IP - 54.210.51.171
     "Version": "2012-10-17",
     "Statement": [
         {
-            "sid": "PublicReadGetObject",
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
