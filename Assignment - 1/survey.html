@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Title of the page -->
     <title>Student Survey Form</title>
     <!-- Internal CSS styles -->
     <style>
         /* Body styles */
         body {
-            font-family: 'Arial';
+            font-family: 'Times New Roman';
             background-color: white;
             color: black;
             margin: 0;
@@ -21,6 +23,7 @@
         h1 {
             text-align: center;
             color: black;
+            text-decoration: underline;
         }
 
         /* Form styles */
@@ -92,46 +95,55 @@
     <form>
         <!-- Last Name -->
         <label for="lastName">Last Name:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
         <input type="text" id="lastName" name="lastName" required>
         <br>
 
         <!-- First Name -->
         <label for="firstName">First Name:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
         <input type="text" id="firstName" name="firstName" required>
         <br>
 
         <!-- Street Address -->
         <label for="streetAddress">Street Address:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
         <input type="text" id="streetAddress" name="streetAddress" required>
         <br>
 
         <!-- City -->
         <label for="city">City:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
         <input type="text" id="city" name="city" required>
         <br>
 
         <!-- State -->
         <label for="state">State:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
         <input type="text" id="state" name="state" required>
         <br>
 
         <!-- ZIP -->
         <label for="zip">ZIP:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-globe"></i></div>
         <input type="text" id="zip" name="zip" required>
         <br>
 
         <!-- Telephone Number -->
         <label for="mobile">Mobile Number:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-mobile"></i></div>
         <input type="tel" id="mobile" name="mobile" required>
         <br>
 
         <!-- Email -->
         <label for="email">E-mail:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
         <input type="email" id="email" name="email" required>
         <br>
 
         <!-- Date of Survey -->
         <label for="dateOfSurvey">Date of Survey:</label>
+        <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-calendar"></i></div>
         <input type="date" id="dateOfSurvey" name="dateOfSurvey" required>
         <br>
 
@@ -173,6 +185,7 @@
         <!-- Likelihood of Recommending to other prospective students -->
         <label for="likelihood">Likelihood of Recommending to other prospective students:</label>
         <select id="likelihood" name="likelihood" required>
+            <option value="select option"> Select Option</option>
             <option value="veryLikely">Very Likely</option>
             <option value="likely">Likely</option>
             <option value="unlikely">Unlikely</option>
